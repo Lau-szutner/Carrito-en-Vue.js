@@ -47,6 +47,22 @@
       "txtAltenativo": "",
       "autor": "Brandon Sanderson",
       "key": 6
+    },
+    {
+      "nombre": "Brazales de duelo",
+      "precio": 54000,
+      "imagen": "./img/portada-7.jpg",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 6
+    },
+    {
+      "nombre": "Brazales de duelo",
+      "precio": 54000,
+      "imagen": "./img/portada-8.jpg",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 6
     }
   ]
 }
