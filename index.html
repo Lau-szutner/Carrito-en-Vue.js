@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Carrito de Compras Vue</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav>
+          <div class="navbar">
+            <div v-if="totalItems === 0">
+              <p>El carrito está vacío</p>
+            </div>
+            <div v-else>
+              <img src="img/carrito.svg" alt="Carrito" />
+              <span class="cart-text"
+                >Cantidad de productos: {{totalItems}}</span
+              >
+              <span class="cart-text">Total {{totalDinero}}</span>
+              <button @click="verProductos">Ver productos agregados</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id="productos">
+          <div v-for="(libro,index) in productos" class="productos">
+            <img v-bind:src="libro.imagen" />
+            <h1 v-text="libro.nombre"></h1>
+            <h2 v-text="libro.autor"></h2>
+            <p>Precio: {{libro.precio}}</p>
+            <button @click="agregarCarrito(index)">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div v-if="verCosas" id="carritoCosas">
+          <div v-for="(item, posicion) in totalCarrito">
+            <img v-bind:src="item.imagen" />
+            <h2 v-text="item.nombre"></h2>
+            <p>Precio: {{item.precio}}</p>
+            <button @click="eliminar(item.key)">Eliminar</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="carrito.js"></script>
+  </body>
+</html>

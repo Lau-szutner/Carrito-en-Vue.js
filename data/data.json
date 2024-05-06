@@ -1,0 +1,52 @@
+{
+  "productos": [
+    {
+      "nombre": "El camino de los reyes",
+      "precio": 50000,
+      "imagen": "./img/portada-1.jpeg",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 1
+    },
+    {
+      "nombre": "Palabras radiantes",
+      "precio": 34000,
+      "imagen": "./img/portada-2.jpg",
+      "txtAltenativo": "Palabras radiantes Portada",
+      "autor": "Brandon Sanderson",
+      "key": 2
+    },
+    {
+      "nombre": "Juramentada",
+      "precio": 63000,
+      "imagen": "./img/portada-3.jpg",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 3
+    },
+    {
+      "nombre": "El ritmo de la guerra",
+      "precio": 60000,
+      "imagen": "./img/portada-4.jpg",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 4
+    },
+    {
+      "nombre": "El pozo de la ascension",
+      "precio": 51000,
+      "imagen": "./img/portada-5.jpeg",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 5
+    },
+    {
+      "nombre": "Brazales de duelo",
+      "precio": 54000,
+      "imagen": "./img/portada-6.webp",
+      "txtAltenativo": "",
+      "autor": "Brandon Sanderson",
+      "key": 6
+    }
+  ]
+}
